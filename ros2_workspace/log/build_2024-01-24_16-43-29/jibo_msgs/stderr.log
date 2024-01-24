@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/opt/ros/iron/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 50, in <module>
+    sys.exit(main())
+  File "/opt/ros/iron/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 46, in main
+    generate_type_hash(args.generator_arguments_file)
+  File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_type_description/__init__.py", line 162, in generate_type_hash
+    with include_path.open('r') as include_file:
+  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_generator_type_description/jibo_msgs/msg/JiboVec3.json'
+gmake[2]: *** [CMakeFiles/jibo_msgs__rosidl_generator_type_description.dir/build.make:83: rosidl_generator_type_description/jibo_msgs/msg/JiboAction.json] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/jibo_msgs__rosidl_generator_type_description.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

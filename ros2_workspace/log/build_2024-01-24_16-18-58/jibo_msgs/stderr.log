@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/opt/ros/iron/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 50, in <module>
+    sys.exit(main())
+  File "/opt/ros/iron/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 46, in main
+    generate_type_hash(args.generator_arguments_file)
+  File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_type_description/__init__.py", line 160, in generate_type_hash
+    pkg_dir = include_map[pkg]
+KeyError: 'std_msgs'
+gmake[2]: *** [CMakeFiles/jibo_msgs__rosidl_generator_type_description.dir/build.make:83: rosidl_generator_type_description/jibo_msgs/msg/JiboAction.json] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/jibo_msgs__rosidl_generator_type_description.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

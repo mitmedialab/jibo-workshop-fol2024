@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>jibo_msgs</name>
+  <version>3.0.0</version>
+  <description>Custom action messages for Jibo robot communication</description>
+
+  <maintainer email="jon@media.mit.edu">samuelsp</maintainer>
+  <license>MIT</license>
+  <url type="website">https://github.com/mitmedialab/jibo_msgs</url>
+  <author email="samuelsp@media.mit.edu">Sam Spaulding</author>
+  <author email="haewon@media.mit.edu">Hae Won Park</author>
+  <author email="jon@media.mit.edu">Jon Ferguson</author>
+  <author email="xiajie@media.mit.edu">Xiajie Zhang</author>
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

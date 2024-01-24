@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from jibo_msgs/msg/JiboAsrResult.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module jibo_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Message for sending automatic speech recognition results.")
+    struct JiboAsrResult {
+      @verbatim (language="comment", text=
+        "Standard ROS header.")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "The top ASR result.")
+      string transcription;
+
+      @verbatim (language="comment", text=
+        "Listen for \"Hey, Jibo\" first.")
+      boolean heyjibo;
+
+      @verbatim (language="comment", text=
+        "The reported confidence level that this result is correct.")
+      double confidence;
+
+      @verbatim (language="comment", text=
+        "Score for how well the text input parsed against the rule.")
+      double heuristic_score;
+
+      @verbatim (language="comment", text=
+        "Label associated to NLParse result according to given parse rule.")
+      string slotaction;
+    };
+  };
+};

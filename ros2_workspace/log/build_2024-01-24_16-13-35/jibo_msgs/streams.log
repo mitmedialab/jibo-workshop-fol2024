@@ -1,0 +1,42 @@
+[0.055s] Invoking command in '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs -- -j2 -l2
+[0.088s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.241s] -- Found ament_index_cpp: 1.5.2 (/opt/ros/iron/share/ament_index_cpp/cmake)
+[0.243s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[0.246s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.283s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.321s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[0.327s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[0.404s] -- Found std_srvs: 5.0.0 (/opt/ros/iron/share/std_srvs/cmake)
+[0.931s] -- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)
+[1.131s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.433s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.466s] -- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)
+[1.505s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.506s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.507s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.570s] -- Configuring done
+[1.656s] -- Generating done
+[1.666s] -- Build files have been written to: /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs
+[1.752s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[1.831s] [  1%] Built target ament_cmake_python_copy_jibo_msgs
+[2.450s] running egg_info
+[2.452s] writing jibo_msgs.egg-info/PKG-INFO
+[2.454s] writing dependency_links to jibo_msgs.egg-info/dependency_links.txt
+[2.455s] writing top-level names to jibo_msgs.egg-info/top_level.txt
+[2.461s] reading manifest file 'jibo_msgs.egg-info/SOURCES.txt'
+[2.463s] writing manifest file 'jibo_msgs.egg-info/SOURCES.txt'
+[2.507s] [  1%] Built target ament_cmake_python_build_jibo_msgs_egg
+[2.961s] Traceback (most recent call last):
+[2.962s]   File "/opt/ros/iron/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 50, in <module>
+[2.962s]     sys.exit(main())
+[2.963s]   File "/opt/ros/iron/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 46, in main
+[2.965s]     generate_type_hash(args.generator_arguments_file)
+[2.965s]   File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_generator_type_description/__init__.py", line 162, in generate_type_hash
+[2.965s]     with include_path.open('r') as include_file:
+[2.966s]   File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+[2.966s]     return self._accessor.open(self, mode, buffering, encoding, errors,
+[2.966s] FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_generator_type_description/jibo_msgs/msg/JiboVec3.json'
+[2.990s] gmake[2]: *** [CMakeFiles/jibo_msgs__rosidl_generator_type_description.dir/build.make:83: rosidl_generator_type_description/jibo_msgs/msg/JiboAction.json] Error 1
+[2.991s] gmake[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/jibo_msgs__rosidl_generator_type_description.dir/all] Error 2
+[2.991s] gmake: *** [Makefile:146: all] Error 2
+[2.995s] Invoked command in '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs -- -j2 -l2

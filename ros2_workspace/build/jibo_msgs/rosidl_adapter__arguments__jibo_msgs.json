@@ -1,0 +1,11 @@
+{
+  "package_name": "jibo_msgs",
+  "non_idl_tuples": [
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/src/jibo_msgs:msg/JiboAction.msg",
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/src/jibo_msgs:msg/JiboAsrCommand.msg",
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/src/jibo_msgs:msg/JiboAsrResult.msg",
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/src/jibo_msgs:msg/JiboRemote.msg",
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/src/jibo_msgs:msg/JiboState.msg",
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/src/jibo_msgs:msg/JiboVec3.msg"
+  ]
+}

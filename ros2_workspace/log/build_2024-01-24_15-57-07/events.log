@@ -1,0 +1,73 @@
+[0.000000] (-) TimerEvent: {}
+[0.000503] (jibo_msgs) JobQueued: {'identifier': 'jibo_msgs', 'dependencies': OrderedDict()}
+[0.000875] (jibo_msgs) JobStarted: {'identifier': 'jibo_msgs'}
+[0.052797] (jibo_msgs) JobProgress: {'identifier': 'jibo_msgs', 'progress': 'cmake'}
+[0.053346] (jibo_msgs) JobProgress: {'identifier': 'jibo_msgs', 'progress': 'build'}
+[0.054193] (jibo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs', '--', '-j2', '-l2'], 'cwd': '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs', 'env': OrderedDict([('GITHUB_TOKEN', 'ghu_VKvzWCGHcR0XUAJE7JZfmYGL7k6gGl1Bs4gQ'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GITHUB_CODESPACE_TOKEN', 'AAFTOGU4WFGM5I2X64PPWQ3FWHJZRANCNFSM4AGHIWSA'), ('USER', 'vscode'), ('GIT_EDITOR', 'code --wait'), ('HOSTNAME', 'codespaces-554cae'), ('GIT_ASKPASS', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh'), ('GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN', 'app.github.dev'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('BROWSER', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/helpers/browser.sh'), ('HOME', '/home/vscode'), ('OLDPWD', '/workspaces/jibo-workshop-fol2024'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-c18cd08e-5c79-4eca-8556-053d11f252f6.sock'), ('CODESPACES', 'true'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/node'), ('COLORTERM', 'truecolor'), ('GITHUB_USER', 'ferguson'), ('GITHUB_GRAPHQL_URL', 'https://api.github.com/graphql'), ('ROS_DISTRO', 'iron'), ('ContainerVersion', '13'), ('GITHUB_API_URL', 'https://api.github.com'), ('RepositoryName', 'jibo-workshop-fol2024'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLOUDENV_ENVIRONMENT_ID', '226e9755-4729-4259-a68c-84a7eaaa431c'), ('PROMPT_DIRTRIM', '4'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/iron/bin:/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vscode/.local/bin'), ('SHELL_LOGGED_IN', 'true'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-b623313f8c.sock'), ('GITHUB_REPOSITORY', 'mitmedialab/jibo-workshop-fol2024'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs'), ('INTERNAL_VSCS_TARGET_URL', 'https://eastus.online.visualstudio.com'), ('GITHUB_SERVER_URL', 'https://github.com'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('CODESPACE_NAME', 'psychic-chainsaw-9vgqxw5xgc97jq'), ('CODESPACE_VSCODE_FOLDER', '/workspaces/jibo-workshop-fol2024'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.088933] (jibo_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.098958] (-) TimerEvent: {}
+[0.199270] (-) TimerEvent: {}
+[0.240429] (jibo_msgs) StdoutLine: {'line': b'-- Found ament_index_cpp: 1.5.2 (/opt/ros/iron/share/ament_index_cpp/cmake)\n'}
+[0.241939] (jibo_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)\n'}
+[0.245487] (jibo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.284145] (jibo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299352] (-) TimerEvent: {}
+[0.322090] (jibo_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)\n'}
+[0.328408] (jibo_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)\n'}
+[0.398470] (jibo_msgs) StdoutLine: {'line': b'-- Found std_srvs: 5.0.0 (/opt/ros/iron/share/std_srvs/cmake)\n'}
+[0.399491] (-) TimerEvent: {}
+[0.499874] (-) TimerEvent: {}
+[0.600354] (-) TimerEvent: {}
+[0.682458] (jibo_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/iron/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):\n'}
+[0.683158] (jibo_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name\n'}
+[0.683726] (jibo_msgs) StderrLine: {'line': b'  jibo_msgs --arguments-file\n'}
+[0.684984] (jibo_msgs) StderrLine: {'line': b'  /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter__arguments__jibo_msgs.json\n'}
+[0.685192] (jibo_msgs) StderrLine: {'line': b'  --output-dir\n'}
+[0.685393] (jibo_msgs) StderrLine: {'line': b'  /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs\n'}
+[0.685594] (jibo_msgs) StderrLine: {'line': b'  --output-file\n'}
+[0.685832] (jibo_msgs) StderrLine: {'line': b'  /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs.idls)\n'}
+[0.686045] (jibo_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[0.686243] (jibo_msgs) StderrLine: {'line': b'\n'}
+[0.689323] (jibo_msgs) StderrLine: {'line': b"  Error processing 'jibovec3 lookat' of 'jibo_msgs/JiboAction': ''jibovec3'\n"}
+[0.689513] (jibo_msgs) StderrLine: {'line': b'  is an invalid message name.  It should have the pattern\n'}
+[0.689677] (jibo_msgs) StderrLine: {'line': b"  '^[A-Z][A-Za-z0-9]*$''\n"}
+[0.690008] (jibo_msgs) StderrLine: {'line': b'\n'}
+[0.690398] (jibo_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[0.690587] (jibo_msgs) StderrLine: {'line': b'\n'}
+[0.690774] (jibo_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n'}
+[0.690951] (jibo_msgs) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[0.691191] (jibo_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 86, in _run_code\n'}
+[0.691352] (jibo_msgs) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[0.691523] (jibo_msgs) StderrLine: {'line': b'    File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[0.691686] (jibo_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[0.691846] (jibo_msgs) StderrLine: {'line': b'    File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[0.692017] (jibo_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[0.692171] (jibo_msgs) StderrLine: {'line': b'    File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl\n'}
+[0.692326] (jibo_msgs) StderrLine: {'line': b'      return convert_msg_to_idl(\n'}
+[0.695827] (jibo_msgs) StderrLine: {'line': b'    File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl\n'}
+[0.696011] (jibo_msgs) StderrLine: {'line': b'      msg = parse_message_string(package_name, input_file.stem, content)\n'}
+[0.696221] (jibo_msgs) StderrLine: {'line': b'    File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/parser.py", line 521, in parse_message_string\n'}
+[0.696811] (jibo_msgs) StderrLine: {'line': b'      Type(type_string, context_package_name=pkg_name),\n'}
+[0.697048] (jibo_msgs) StderrLine: {'line': b'    File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/parser.py", line 278, in __init__\n'}
+[0.697257] (jibo_msgs) StderrLine: {'line': b'      super(Type, self).__init__(\n'}
+[0.697460] (jibo_msgs) StderrLine: {'line': b'    File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/parser.py", line 206, in __init__\n'}
+[0.697637] (jibo_msgs) StderrLine: {'line': b'      raise InvalidResourceName(\n'}
+[0.697835] (jibo_msgs) StderrLine: {'line': b'\n'}
+[0.698041] (jibo_msgs) StderrLine: {'line': b"  rosidl_adapter.parser.InvalidResourceName: 'jibovec3' is an invalid message\n"}
+[0.698233] (jibo_msgs) StderrLine: {'line': b"  name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'\n"}
+[0.698398] (jibo_msgs) StderrLine: {'line': b'\n'}
+[0.698566] (jibo_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.698766] (jibo_msgs) StderrLine: {'line': b'  /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)\n'}
+[0.698974] (jibo_msgs) StderrLine: {'line': b'  CMakeLists.txt:25 (rosidl_generate_interfaces)\n'}
+[0.699175] (jibo_msgs) StderrLine: {'line': b'\n'}
+[0.699368] (jibo_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.699548] (jibo_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.699772] (jibo_msgs) StdoutLine: {'line': b'See also "/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.700491] (-) TimerEvent: {}
+[0.722403] (jibo_msgs) StderrLine: {'line': b'gmake: *** [Makefile:1895: cmake_check_build_system] Error 1\n'}
+[0.726770] (jibo_msgs) CommandEnded: {'returncode': 2}
+[0.800595] (-) TimerEvent: {}
+[0.901296] (-) TimerEvent: {}
+[1.004639] (-) TimerEvent: {}
+[1.086356] (jibo_msgs) JobEnded: {'identifier': 'jibo_msgs', 'rc': 2}
+[1.087916] (-) EventReactorShutdown: {}

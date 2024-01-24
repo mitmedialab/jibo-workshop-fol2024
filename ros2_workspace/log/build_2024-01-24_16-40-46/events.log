@@ -1,0 +1,277 @@
+[0.000000] (-) TimerEvent: {}
+[0.000891] (jibo_msgs) JobQueued: {'identifier': 'jibo_msgs', 'dependencies': OrderedDict()}
+[0.001305] (jibo_msgs) JobStarted: {'identifier': 'jibo_msgs'}
+[0.064807] (jibo_msgs) JobProgress: {'identifier': 'jibo_msgs', 'progress': 'cmake'}
+[0.065829] (jibo_msgs) JobProgress: {'identifier': 'jibo_msgs', 'progress': 'build'}
+[0.066581] (jibo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs', '--', '-j2', '-l2'], 'cwd': '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs', 'env': OrderedDict([('GITHUB_TOKEN', 'ghu_VKvzWCGHcR0XUAJE7JZfmYGL7k6gGl1Bs4gQ'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GITHUB_CODESPACE_TOKEN', 'AAFTOGU4WFGM5I2X64PPWQ3FWHJZRANCNFSM4AGHIWSA'), ('USER', 'vscode'), ('GIT_EDITOR', 'code --wait'), ('HOSTNAME', 'codespaces-554cae'), ('GIT_ASKPASS', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh'), ('GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN', 'app.github.dev'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('BROWSER', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/helpers/browser.sh'), ('HOME', '/home/vscode'), ('OLDPWD', '/workspaces/jibo-workshop-fol2024'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f8e3ca67-d285-4075-8e98-931a12b36034.sock'), ('CODESPACES', 'true'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/node'), ('COLORTERM', 'truecolor'), ('GITHUB_USER', 'ferguson'), ('GITHUB_GRAPHQL_URL', 'https://api.github.com/graphql'), ('COLCON_PREFIX_PATH', '/workspaces/jibo-workshop-fol2024/ros2_workspace/install'), ('ROS_DISTRO', 'iron'), ('ContainerVersion', '13'), ('GITHUB_API_URL', 'https://api.github.com'), ('RepositoryName', 'jibo-workshop-fol2024'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLOUDENV_ENVIRONMENT_ID', '226e9755-4729-4259-a68c-84a7eaaa431c'), ('PROMPT_DIRTRIM', '4'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/iron/bin:/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vscode/.local/bin'), ('SHELL_LOGGED_IN', 'true'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-209fc3813d.sock'), ('GITHUB_REPOSITORY', 'mitmedialab/jibo-workshop-fol2024'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs'), ('INTERNAL_VSCS_TARGET_URL', 'https://eastus.online.visualstudio.com'), ('GITHUB_SERVER_URL', 'https://github.com'), ('PYTHONPATH', '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('CODESPACE_NAME', 'psychic-chainsaw-9vgqxw5xgc97jq'), ('CODESPACE_VSCODE_FOLDER', '/workspaces/jibo-workshop-fol2024'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs:/opt/ros/iron')]), 'shell': False}
+[0.098883] (-) TimerEvent: {}
+[0.164214] (jibo_msgs) StdoutLine: {'line': b'[  1%] Built target jibo_msgs__rosidl_generator_type_description\n'}
+[0.198990] (-) TimerEvent: {}
+[0.256261] (jibo_msgs) StdoutLine: {'line': b'[  2%] Built target jibo_msgs__cpp\n'}
+[0.258171] (jibo_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_jibo_msgs\n'}
+[0.287291] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_generator_c\x1b[0m\n'}
+[0.299077] (-) TimerEvent: {}
+[0.392259] (jibo_msgs) StdoutLine: {'line': b'[ 25%] Built target jibo_msgs__rosidl_generator_c\n'}
+[0.399193] (-) TimerEvent: {}
+[0.424786] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.499263] (-) TimerEvent: {}
+[0.596881] (jibo_msgs) StdoutLine: {'line': b'[ 35%] Built target jibo_msgs__rosidl_typesupport_cpp\n'}
+[0.599349] (-) TimerEvent: {}
+[0.659980] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[0.699464] (-) TimerEvent: {}
+[0.771941] (jibo_msgs) StdoutLine: {'line': b'[ 44%] Built target jibo_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.796478] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.799544] (-) TimerEvent: {}
+[0.883951] (jibo_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.887167] (jibo_msgs) StdoutLine: {'line': b'writing jibo_msgs.egg-info/PKG-INFO\n'}
+[0.889476] (jibo_msgs) StdoutLine: {'line': b'writing dependency_links to jibo_msgs.egg-info/dependency_links.txt\n'}
+[0.891922] (jibo_msgs) StdoutLine: {'line': b'writing top-level names to jibo_msgs.egg-info/top_level.txt\n'}
+[0.896557] (jibo_msgs) StdoutLine: {'line': b'[ 54%] Built target jibo_msgs__rosidl_typesupport_introspection_c\n'}
+[0.899635] (-) TimerEvent: {}
+[0.900256] (jibo_msgs) StdoutLine: {'line': b"reading manifest file 'jibo_msgs.egg-info/SOURCES.txt'\n"}
+[0.901974] (jibo_msgs) StdoutLine: {'line': b"writing manifest file 'jibo_msgs.egg-info/SOURCES.txt'\n"}
+[0.918802] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[0.960508] (jibo_msgs) StdoutLine: {'line': b'[ 63%] Built target jibo_msgs__rosidl_typesupport_c\n'}
+[0.964230] (jibo_msgs) StdoutLine: {'line': b'[ 63%] Built target ament_cmake_python_build_jibo_msgs_egg\n'}
+[0.982338] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.988868] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.999712] (-) TimerEvent: {}
+[1.082929] (jibo_msgs) StdoutLine: {'line': b'[ 72%] Built target jibo_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.099809] (-) TimerEvent: {}
+[1.102511] (jibo_msgs) StdoutLine: {'line': b'[ 82%] Built target jibo_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.134438] (jibo_msgs) StdoutLine: {'line': b'[ 82%] Built target jibo_msgs\n'}
+[1.172006] (jibo_msgs) StdoutLine: {'line': b'[ 83%] Built target jibo_msgs__py\n'}
+[1.192150] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_generator_py\x1b[0m\n'}
+[1.199987] (-) TimerEvent: {}
+[1.289989] (jibo_msgs) StdoutLine: {'line': b'[ 91%] Built target jibo_msgs__rosidl_generator_py\n'}
+[1.306699] (-) TimerEvent: {}
+[1.366453] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[1.366718] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[1.406795] (-) TimerEvent: {}
+[1.443033] (jibo_msgs) StdoutLine: {'line': b'[ 94%] Built target jibo_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.446818] (jibo_msgs) StdoutLine: {'line': b'[ 97%] Built target jibo_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.494802] (jibo_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[1.509216] (-) TimerEvent: {}
+[1.542929] (jibo_msgs) StdoutLine: {'line': b'[100%] Built target jibo_msgs__rosidl_typesupport_c__pyext\n'}
+[1.565950] (jibo_msgs) CommandEnded: {'returncode': 0}
+[1.609318] (-) TimerEvent: {}
+[1.709912] (-) TimerEvent: {}
+[1.776435] (jibo_msgs) JobProgress: {'identifier': 'jibo_msgs', 'progress': 'install'}
+[1.787230] (jibo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs'], 'cwd': '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs', 'env': OrderedDict([('GITHUB_TOKEN', 'ghu_VKvzWCGHcR0XUAJE7JZfmYGL7k6gGl1Bs4gQ'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GITHUB_CODESPACE_TOKEN', 'AAFTOGU4WFGM5I2X64PPWQ3FWHJZRANCNFSM4AGHIWSA'), ('USER', 'vscode'), ('GIT_EDITOR', 'code --wait'), ('HOSTNAME', 'codespaces-554cae'), ('GIT_ASKPASS', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh'), ('GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN', 'app.github.dev'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('BROWSER', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/helpers/browser.sh'), ('HOME', '/home/vscode'), ('OLDPWD', '/workspaces/jibo-workshop-fol2024'), ('TERM_PROGRAM_VERSION', '1.85.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f8e3ca67-d285-4075-8e98-931a12b36034.sock'), ('CODESPACES', 'true'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/node'), ('COLORTERM', 'truecolor'), ('GITHUB_USER', 'ferguson'), ('GITHUB_GRAPHQL_URL', 'https://api.github.com/graphql'), ('COLCON_PREFIX_PATH', '/workspaces/jibo-workshop-fol2024/ros2_workspace/install'), ('ROS_DISTRO', 'iron'), ('ContainerVersion', '13'), ('GITHUB_API_URL', 'https://api.github.com'), ('RepositoryName', 'jibo-workshop-fol2024'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLOUDENV_ENVIRONMENT_ID', '226e9755-4729-4259-a68c-84a7eaaa431c'), ('PROMPT_DIRTRIM', '4'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/iron/bin:/vscode/bin/linux-x64/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vscode/.local/bin'), ('SHELL_LOGGED_IN', 'true'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-209fc3813d.sock'), ('GITHUB_REPOSITORY', 'mitmedialab/jibo-workshop-fol2024'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs'), ('INTERNAL_VSCS_TARGET_URL', 'https://eastus.online.visualstudio.com'), ('GITHUB_SERVER_URL', 'https://github.com'), ('PYTHONPATH', '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('CODESPACE_NAME', 'psychic-chainsaw-9vgqxw5xgc97jq'), ('CODESPACE_VSCODE_FOLDER', '/workspaces/jibo-workshop-fol2024'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs:/opt/ros/iron')]), 'shell': False}
+[1.797719] (jibo_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.798879] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/ament_index/resource_index/rosidl_interfaces/jibo_msgs\n'}
+[1.799713] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAction.json\n'}
+[1.800565] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrCommand.json\n'}
+[1.801267] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrResult.json\n'}
+[1.802161] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboRemote.json\n'}
+[1.803918] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboState.json\n'}
+[1.805321] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs\n'}
+[1.805930] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg\n'}
+[1.806714] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_remote.h\n'}
+[1.807186] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.808104] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_asr_command.h\n'}
+[1.808944] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_state.h\n'}
+[1.809926] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_action.h\n'}
+[1.810888] (-) TimerEvent: {}
+[1.811062] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_asr_result.h\n'}
+[1.812162] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail\n'}
+[1.812593] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__type_support.h\n'}
+[1.813262] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__type_support.c\n'}
+[1.814016] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__type_support.c\n'}
+[1.815003] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__description.c\n'}
+[1.816693] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__description.c\n'}
+[1.816979] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__struct.h\n'}
+[1.818969] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__description.c\n'}
+[1.819463] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__functions.h\n'}
+[1.820295] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__type_support.h\n'}
+[1.821167] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__type_support.c\n'}
+[1.822034] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__functions.h\n'}
+[1.823945] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__type_support.c\n'}
+[1.824289] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__type_support.c\n'}
+[1.824561] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__type_support.h\n'}
+[1.824726] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__functions.c\n'}
+[1.824886] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__description.c\n'}
+[1.825056] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__functions.h\n'}
+[1.825218] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__type_support.h\n'}
+[1.825371] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__functions.c\n'}
+[1.826665] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__functions.c\n'}
+[1.826855] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__struct.h\n'}
+[1.827009] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__struct.h\n'}
+[1.827164] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__struct.h\n'}
+[1.827318] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__struct.h\n'}
+[1.827466] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__functions.c\n'}
+[1.827621] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__type_support.h\n'}
+[1.829607] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__functions.h\n'}
+[1.830027] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__description.c\n'}
+[1.830383] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__functions.h\n'}
+[1.830727] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__functions.c\n'}
+[1.830991] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/library_path.sh\n'}
+[1.831162] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/library_path.dsv\n'}
+[1.831325] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_generator_c.so\n'}
+[1.831487] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs\n'}
+[1.831798] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg\n'}
+[1.831955] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.837130] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail\n'}
+[1.838092] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__rosidl_typesupport_fastrtps_c.h\n'}
+[1.838305] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__rosidl_typesupport_fastrtps_c.h\n'}
+[1.838496] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.838711] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__rosidl_typesupport_fastrtps_c.h\n'}
+[1.838875] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__rosidl_typesupport_fastrtps_c.h\n'}
+[1.839034] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[1.839467] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs\n'}
+[1.839654] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg\n'}
+[1.839811] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.839984] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail\n'}
+[1.840141] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__type_support.c\n'}
+[1.840382] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__rosidl_typesupport_introspection_c.h\n'}
+[1.840918] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__type_support.c\n'}
+[1.841104] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__type_support.c\n'}
+[1.841290] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__rosidl_typesupport_introspection_c.h\n'}
+[1.841474] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__type_support.c\n'}
+[1.841654] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__type_support.c\n'}
+[1.841834] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__rosidl_typesupport_introspection_c.h\n'}
+[1.842027] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__rosidl_typesupport_introspection_c.h\n'}
+[1.842216] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__rosidl_typesupport_introspection_c.h\n'}
+[1.842421] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_introspection_c.so\n'}
+[1.842632] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_c.so\n'}
+[1.842830] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs\n'}
+[1.843021] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg\n'}
+[1.843210] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_state.hpp\n'}
+[1.843391] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_asr_command.hpp\n'}
+[1.843576] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_remote.hpp\n'}
+[1.843762] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_action.hpp\n'}
+[1.843953] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_asr_result.hpp\n'}
+[1.844193] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail\n'}
+[1.844398] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__struct.hpp\n'}
+[1.846760] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__traits.hpp\n'}
+[1.847785] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__struct.hpp\n'}
+[1.847953] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__builder.hpp\n'}
+[1.848116] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__struct.hpp\n'}
+[1.848266] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__struct.hpp\n'}
+[1.848420] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__builder.hpp\n'}
+[1.848571] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__traits.hpp\n'}
+[1.849159] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__traits.hpp\n'}
+[1.849498] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__builder.hpp\n'}
+[1.849660] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__builder.hpp\n'}
+[1.849821] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__struct.hpp\n'}
+[1.849995] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__traits.hpp\n'}
+[1.850145] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__traits.hpp\n'}
+[1.850308] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__builder.hpp\n'}
+[1.850780] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs\n'}
+[1.854668] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg\n'}
+[1.854872] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.855032] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail\n'}
+[1.855184] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/dds_fastrtps\n'}
+[1.855332] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.855485] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.855634] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.855785] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.855943] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.856095] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.856274] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs\n'}
+[1.856452] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg\n'}
+[1.856651] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail\n'}
+[1.856850] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__type_support.cpp\n'}
+[1.857051] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__type_support.cpp\n'}
+[1.857242] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__type_support.cpp\n'}
+[1.857451] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__type_support.cpp\n'}
+[1.857650] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.857853] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.858053] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.858250] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.858449] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__type_support.cpp\n'}
+[1.858679] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.860760] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[1.860939] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_cpp.so\n'}
+[1.861097] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/pythonpath.sh\n'}
+[1.861255] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/pythonpath.dsv\n'}
+[1.861407] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs-3.0.0-py3.10.egg-info\n'}
+[1.861575] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs-3.0.0-py3.10.egg-info/PKG-INFO\n'}
+[1.861975] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs-3.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.862147] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs-3.0.0-py3.10.egg-info/top_level.txt\n'}
+[1.862305] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs-3.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.862463] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs\n'}
+[1.862637] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg\n'}
+[1.862804] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_state.py\n'}
+[1.862959] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_action_s.c\n'}
+[1.866832] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_asr_result.py\n'}
+[1.867036] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_state_s.c\n'}
+[1.867239] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_asr_result_s.c\n'}
+[1.867534] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_asr_command_s.c\n'}
+[1.867744] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_remote.py\n'}
+[1.867950] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/__init__.py\n'}
+[1.868152] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_action.py\n'}
+[1.868349] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_asr_command.py\n'}
+[1.868556] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_remote_s.c\n'}
+[1.868762] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/_jibo_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.868959] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/_jibo_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[1.869162] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/_jibo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.869353] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.869537] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/__init__.py\n'}
+[1.869735] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/libjibo_msgs__rosidl_generator_py.so\n'}
+[1.869949] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.870158] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.910981] (-) TimerEvent: {}
+[1.920653] (jibo_msgs) StdoutLine: {'line': b"Listing '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs'...\n"}
+[1.920900] (jibo_msgs) StdoutLine: {'line': b"Listing '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg'...\n"}
+[1.939350] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.940018] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.940695] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.941460] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_generator_py.so\n'}
+[1.941916] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAction.idl\n'}
+[1.942168] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrCommand.idl\n'}
+[1.942882] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrResult.idl\n'}
+[1.943195] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboRemote.idl\n'}
+[1.943479] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboState.idl\n'}
+[1.943724] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAction.msg\n'}
+[1.943995] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrCommand.msg\n'}
+[1.944254] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrResult.msg\n'}
+[1.944499] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboRemote.msg\n'}
+[1.944757] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboState.msg\n'}
+[1.945004] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/ament_index/resource_index/package_run_dependencies/jibo_msgs\n'}
+[1.945270] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/ament_index/resource_index/parent_prefix_path/jibo_msgs\n'}
+[1.945500] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/ament_prefix_path.sh\n'}
+[1.945687] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/ament_prefix_path.dsv\n'}
+[1.945847] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/path.sh\n'}
+[1.946006] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/path.dsv\n'}
+[1.946163] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/local_setup.bash\n'}
+[1.946318] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/local_setup.sh\n'}
+[1.946474] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/local_setup.zsh\n'}
+[1.946648] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/local_setup.dsv\n'}
+[1.946819] (jibo_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/package.dsv\n'}
+[1.957104] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/ament_index/resource_index/packages/jibo_msgs\n'}
+[1.957748] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_generator_cExport.cmake\n'}
+[1.958682] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.958874] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.959038] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.959197] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.969614] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.969799] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_cExport.cmake\n'}
+[1.969972] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.970134] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_generator_cppExport.cmake\n'}
+[1.970295] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.970451] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.970608] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.971035] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.971206] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[1.971369] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.971529] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_generator_pyExport.cmake\n'}
+[1.971694] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.971853] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.972010] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.972179] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.972334] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.972491] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.972650] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.972804] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.972958] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgsConfig.cmake\n'}
+[1.973114] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgsConfig-version.cmake\n'}
+[1.973267] (jibo_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/package.xml\n'}
+[1.973425] (jibo_msgs) CommandEnded: {'returncode': 0}
+[2.011085] (-) TimerEvent: {}
+[2.111341] (-) TimerEvent: {}
+[2.211627] (-) TimerEvent: {}
+[2.311993] (-) TimerEvent: {}
+[2.412700] (-) TimerEvent: {}
+[2.486655] (jibo_msgs) JobEnded: {'identifier': 'jibo_msgs', 'rc': 0}
+[2.488082] (-) EventReactorShutdown: {}

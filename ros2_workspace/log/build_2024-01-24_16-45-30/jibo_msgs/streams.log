@@ -1,0 +1,388 @@
+[0.067s] Invoking command in '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs -- -j2 -l2
+[0.106s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.257s] -- Found ament_index_cpp: 1.5.2 (/opt/ros/iron/share/ament_index_cpp/cmake)
+[0.259s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[0.262s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.301s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.353s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[0.363s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[0.450s] -- Found std_srvs: 5.0.0 (/opt/ros/iron/share/std_srvs/cmake)
+[1.159s] -- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)
+[1.409s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.739s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.764s] -- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)
+[1.788s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.788s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.790s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.909s] -- Configuring done
+[2.095s] -- Generating done
+[2.103s] -- Build files have been written to: /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs
+[2.193s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.287s] [  1%] Built target ament_cmake_python_copy_jibo_msgs
+[3.001s] running egg_info
+[3.002s] writing jibo_msgs.egg-info/PKG-INFO
+[3.003s] writing dependency_links to jibo_msgs.egg-info/dependency_links.txt
+[3.005s] writing top-level names to jibo_msgs.egg-info/top_level.txt
+[3.005s] reading manifest file 'jibo_msgs.egg-info/SOURCES.txt'
+[3.006s] writing manifest file 'jibo_msgs.egg-info/SOURCES.txt'
+[3.087s] [  1%] Built target ament_cmake_python_build_jibo_msgs_egg
+[3.695s] [  1%] Built target jibo_msgs__rosidl_generator_type_description
+[3.720s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.743s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.132s] [  3%] Built target jibo_msgs__cpp
+[6.380s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_generator_c[0m
+[6.455s] [  4%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_action__description.c.o[0m
+[6.461s] [  5%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_action__functions.c.o[0m
+[6.542s] [  7%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_action__type_support.c.o[0m
+[6.561s] [  8%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_asr_command__description.c.o[0m
+[6.624s] [  9%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_asr_command__functions.c.o[0m
+[6.640s] [ 10%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_asr_command__type_support.c.o[0m
+[6.716s] [ 13%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_asr_result__description.c.o[0m
+[6.717s] [ 13%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_asr_result__functions.c.o[0m
+[6.796s] [ 14%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_asr_result__type_support.c.o[0m
+[6.822s] [ 15%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_remote__description.c.o[0m
+[6.866s] [ 16%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_remote__functions.c.o[0m
+[6.902s] [ 17%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_remote__type_support.c.o[0m
+[6.977s] [ 19%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_state__description.c.o[0m
+[7.076s] [ 20%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_state__functions.c.o[0m
+[7.246s] [ 21%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_state__type_support.c.o[0m
+[7.317s] [ 22%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_vec3__description.c.o[0m
+[7.348s] [ 23%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_vec3__functions.c.o[0m
+[7.396s] [ 25%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_c.dir/rosidl_generator_c/jibo_msgs/msg/detail/jibo_vec3__type_support.c.o[0m
+[7.447s] [ 26%] [32m[1mLinking C shared library libjibo_msgs__rosidl_generator_c.so[0m
+[7.503s] [ 26%] Built target jibo_msgs__rosidl_generator_c
+[7.521s] [ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.523s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.214s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_cpp[0m
+[9.320s] [ 29%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jibo_msgs/msg/jibo_action__type_support.cpp.o[0m
+[9.559s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_fastrtps_c[0m
+[9.701s] [ 30%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jibo_msgs/msg/detail/jibo_action__type_support_c.cpp.o[0m
+[10.094s] [ 32%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jibo_msgs/msg/jibo_asr_command__type_support.cpp.o[0m
+[10.505s] [ 33%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jibo_msgs/msg/detail/jibo_asr_command__type_support_c.cpp.o[0m
+[10.856s] [ 34%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jibo_msgs/msg/jibo_asr_result__type_support.cpp.o[0m
+[11.124s] [ 35%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jibo_msgs/msg/detail/jibo_asr_result__type_support_c.cpp.o[0m
+[11.497s] [ 36%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jibo_msgs/msg/jibo_remote__type_support.cpp.o[0m
+[11.786s] [ 38%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jibo_msgs/msg/detail/jibo_remote__type_support_c.cpp.o[0m
+[12.278s] [ 39%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jibo_msgs/msg/jibo_state__type_support.cpp.o[0m
+[12.542s] [ 40%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jibo_msgs/msg/detail/jibo_state__type_support_c.cpp.o[0m
+[13.088s] [ 41%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/jibo_msgs/msg/jibo_vec3__type_support.cpp.o[0m
+[13.271s] [ 42%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/jibo_msgs/msg/detail/jibo_vec3__type_support_c.cpp.o[0m
+[13.707s] [ 44%] [32m[1mLinking CXX shared library libjibo_msgs__rosidl_typesupport_cpp.so[0m
+[13.884s] [ 44%] Built target jibo_msgs__rosidl_typesupport_cpp
+[13.951s] [ 45%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[14.006s] [ 46%] [32m[1mLinking CXX shared library libjibo_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[14.144s] [ 46%] Built target jibo_msgs__rosidl_typesupport_fastrtps_c
+[14.164s] [ 47%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[15.786s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_introspection_c[0m
+[15.831s] [ 48%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jibo_msgs/msg/detail/jibo_action__type_support.c.o[0m
+[15.889s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_c[0m
+[15.939s] [ 50%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jibo_msgs/msg/detail/jibo_asr_command__type_support.c.o[0m
+[15.944s] [ 51%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jibo_msgs/msg/jibo_action__type_support.cpp.o[0m
+[16.062s] [ 52%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jibo_msgs/msg/jibo_asr_command__type_support.cpp.o[0m
+[16.071s] [ 53%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jibo_msgs/msg/detail/jibo_asr_result__type_support.c.o[0m
+[16.173s] [ 54%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jibo_msgs/msg/detail/jibo_remote__type_support.c.o[0m
+[16.198s] [ 55%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jibo_msgs/msg/jibo_asr_result__type_support.cpp.o[0m
+[16.257s] [ 57%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jibo_msgs/msg/detail/jibo_state__type_support.c.o[0m
+[16.288s] [ 58%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jibo_msgs/msg/jibo_remote__type_support.cpp.o[0m
+[16.338s] [ 59%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/jibo_msgs/msg/detail/jibo_vec3__type_support.c.o[0m
+[16.383s] [ 60%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jibo_msgs/msg/jibo_state__type_support.cpp.o[0m
+[16.429s] [ 61%] [32m[1mLinking C shared library libjibo_msgs__rosidl_typesupport_introspection_c.so[0m
+[16.486s] [ 63%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/jibo_msgs/msg/jibo_vec3__type_support.cpp.o[0m
+[16.488s] [ 63%] Built target jibo_msgs__rosidl_typesupport_introspection_c
+[16.507s] [ 64%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[16.587s] [ 65%] [32m[1mLinking CXX shared library libjibo_msgs__rosidl_typesupport_c.so[0m
+[16.687s] [ 65%] Built target jibo_msgs__rosidl_typesupport_c
+[16.706s] [ 66%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[18.583s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[18.648s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_introspection_cpp[0m
+[18.703s] [ 67%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jibo_msgs/msg/detail/dds_fastrtps/jibo_action__type_support.cpp.o[0m
+[18.731s] [ 69%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jibo_msgs/msg/detail/jibo_action__type_support.cpp.o[0m
+[19.457s] [ 70%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jibo_msgs/msg/detail/jibo_asr_command__type_support.cpp.o[0m
+[19.801s] [ 71%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jibo_msgs/msg/detail/dds_fastrtps/jibo_asr_command__type_support.cpp.o[0m
+[20.108s] [ 72%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jibo_msgs/msg/detail/jibo_asr_result__type_support.cpp.o[0m
+[20.788s] [ 73%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jibo_msgs/msg/detail/dds_fastrtps/jibo_asr_result__type_support.cpp.o[0m
+[20.813s] [ 75%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jibo_msgs/msg/detail/jibo_remote__type_support.cpp.o[0m
+[21.625s] [ 76%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jibo_msgs/msg/detail/jibo_state__type_support.cpp.o[0m
+[21.766s] [ 77%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jibo_msgs/msg/detail/dds_fastrtps/jibo_remote__type_support.cpp.o[0m
+[22.273s] [ 78%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/jibo_msgs/msg/detail/jibo_vec3__type_support.cpp.o[0m
+[22.792s] [ 79%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jibo_msgs/msg/detail/dds_fastrtps/jibo_state__type_support.cpp.o[0m
+[23.079s] [ 80%] [32m[1mLinking CXX shared library libjibo_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[23.199s] [ 80%] Built target jibo_msgs__rosidl_typesupport_introspection_cpp
+[23.216s] [ 82%] [32mBuilding CXX object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/jibo_msgs/msg/detail/dds_fastrtps/jibo_vec3__type_support.cpp.o[0m
+[24.024s] [ 83%] [32m[1mLinking CXX shared library libjibo_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[24.107s] [ 83%] Built target jibo_msgs__rosidl_typesupport_fastrtps_cpp
+[24.132s] [ 83%] Built target jibo_msgs
+[24.156s] [ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[26.140s] [ 84%] Built target jibo_msgs__py
+[26.158s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_generator_py[0m
+[26.247s] [ 85%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_py.dir/rosidl_generator_py/jibo_msgs/msg/_jibo_action_s.c.o[0m
+[26.265s] [ 86%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_py.dir/rosidl_generator_py/jibo_msgs/msg/_jibo_asr_command_s.c.o[0m
+[26.504s] [ 88%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_py.dir/rosidl_generator_py/jibo_msgs/msg/_jibo_asr_result_s.c.o[0m
+[26.557s] [ 89%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_py.dir/rosidl_generator_py/jibo_msgs/msg/_jibo_remote_s.c.o[0m
+[26.722s] [ 90%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_py.dir/rosidl_generator_py/jibo_msgs/msg/_jibo_state_s.c.o[0m
+[26.758s] [ 91%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_generator_py.dir/rosidl_generator_py/jibo_msgs/msg/_jibo_vec3_s.c.o[0m
+[26.935s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/jibo_msgs/libjibo_msgs__rosidl_generator_py.so[0m
+[26.993s] [ 92%] Built target jibo_msgs__rosidl_generator_py
+[27.008s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[27.024s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[27.082s] [ 94%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/jibo_msgs/_jibo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[27.142s] [ 95%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/jibo_msgs/_jibo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[27.401s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/jibo_msgs/jibo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.462s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/jibo_msgs/jibo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.488s] [ 97%] Built target jibo_msgs__rosidl_typesupport_fastrtps_c__pyext
+[27.504s] [35m[1mConsolidate compiler generated dependencies of target jibo_msgs__rosidl_typesupport_c__pyext[0m
+[27.537s] [ 98%] [32mBuilding C object CMakeFiles/jibo_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/jibo_msgs/_jibo_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[27.564s] [ 98%] Built target jibo_msgs__rosidl_typesupport_introspection_c__pyext
+[27.698s] [100%] [32m[1mLinking C shared library rosidl_generator_py/jibo_msgs/jibo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[27.754s] [100%] Built target jibo_msgs__rosidl_typesupport_c__pyext
+[27.781s] Invoked command in '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs -- -j2 -l2
+[28.126s] Invoking command in '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs
+[28.135s] -- Install configuration: ""
+[28.136s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/ament_index/resource_index/rosidl_interfaces/jibo_msgs
+[28.139s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAction.json
+[28.140s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrCommand.json
+[28.141s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrResult.json
+[28.142s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboRemote.json
+[28.143s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboState.json
+[28.146s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboVec3.json
+[28.148s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs
+[28.148s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg
+[28.148s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_vec3.h
+[28.149s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_remote.h
+[28.149s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/rosidl_generator_c__visibility_control.h
+[28.149s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_asr_command.h
+[28.149s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_state.h
+[28.149s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_action.h
+[28.149s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_asr_result.h
+[28.150s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail
+[28.150s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__type_support.h
+[28.150s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__type_support.c
+[28.150s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__type_support.c
+[28.151s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__description.c
+[28.152s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__description.c
+[28.152s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__struct.h
+[28.152s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__struct.h
+[28.156s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__description.c
+[28.157s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__functions.h
+[28.158s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__type_support.h
+[28.158s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__type_support.c
+[28.158s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__functions.h
+[28.158s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__type_support.h
+[28.158s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__type_support.c
+[28.161s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__type_support.c
+[28.161s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__type_support.h
+[28.162s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__functions.c
+[28.162s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__description.c
+[28.163s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__functions.h
+[28.163s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__type_support.h
+[28.163s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__functions.c
+[28.166s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__functions.c
+[28.166s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__functions.c
+[28.167s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__type_support.c
+[28.168s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__struct.h
+[28.168s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__struct.h
+[28.168s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__struct.h
+[28.169s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__struct.h
+[28.169s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__functions.c
+[28.169s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__type_support.h
+[28.169s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__functions.h
+[28.169s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__description.c
+[28.169s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__description.c
+[28.170s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__functions.h
+[28.170s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__functions.h
+[28.174s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__functions.c
+[28.174s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/library_path.sh
+[28.175s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/library_path.dsv
+[28.175s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_generator_c.so
+[28.177s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_generator_c.so" to ""
+[28.178s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs
+[28.179s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg
+[28.179s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[28.184s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail
+[28.185s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__rosidl_typesupport_fastrtps_c.h
+[28.185s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__rosidl_typesupport_fastrtps_c.h
+[28.186s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__rosidl_typesupport_fastrtps_c.h
+[28.190s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__rosidl_typesupport_fastrtps_c.h
+[28.191s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__rosidl_typesupport_fastrtps_c.h
+[28.191s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__rosidl_typesupport_fastrtps_c.h
+[28.192s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_fastrtps_c.so
+[28.193s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[28.194s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs
+[28.194s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg
+[28.194s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[28.194s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail
+[28.195s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__type_support.c
+[28.198s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__rosidl_typesupport_introspection_c.h
+[28.199s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__type_support.c
+[28.199s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__type_support.c
+[28.200s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__rosidl_typesupport_introspection_c.h
+[28.200s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__type_support.c
+[28.201s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__type_support.c
+[28.202s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__rosidl_typesupport_introspection_c.h
+[28.203s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__rosidl_typesupport_introspection_c.h
+[28.210s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__type_support.c
+[28.211s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__rosidl_typesupport_introspection_c.h
+[28.211s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__rosidl_typesupport_introspection_c.h
+[28.212s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_introspection_c.so
+[28.213s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_introspection_c.so" to ""
+[28.214s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_c.so
+[28.215s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_c.so" to ""
+[28.215s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs
+[28.215s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg
+[28.215s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_state.hpp
+[28.216s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_asr_command.hpp
+[28.216s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_remote.hpp
+[28.217s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_action.hpp
+[28.217s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_vec3.hpp
+[28.222s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/jibo_asr_result.hpp
+[28.222s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail
+[28.223s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__struct.hpp
+[28.225s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__struct.hpp
+[28.225s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__traits.hpp
+[28.225s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__struct.hpp
+[28.225s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__builder.hpp
+[28.226s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__struct.hpp
+[28.226s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__struct.hpp
+[28.228s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__builder.hpp
+[28.228s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__traits.hpp
+[28.229s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__builder.hpp
+[28.230s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__traits.hpp
+[28.238s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__builder.hpp
+[28.239s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__traits.hpp
+[28.239s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__builder.hpp
+[28.240s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__struct.hpp
+[28.240s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__traits.hpp
+[28.241s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__traits.hpp
+[28.241s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__builder.hpp
+[28.242s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs
+[28.242s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg
+[28.242s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[28.243s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail
+[28.243s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/dds_fastrtps
+[28.243s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__rosidl_typesupport_fastrtps_cpp.hpp
+[28.243s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__rosidl_typesupport_fastrtps_cpp.hpp
+[28.244s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__rosidl_typesupport_fastrtps_cpp.hpp
+[28.245s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__rosidl_typesupport_fastrtps_cpp.hpp
+[28.245s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__rosidl_typesupport_fastrtps_cpp.hpp
+[28.247s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__rosidl_typesupport_fastrtps_cpp.hpp
+[28.247s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_fastrtps_cpp.so
+[28.254s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[28.255s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs
+[28.255s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg
+[28.255s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail
+[28.255s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__type_support.cpp
+[28.256s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__type_support.cpp
+[28.256s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__type_support.cpp
+[28.257s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__type_support.cpp
+[28.257s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_action__rosidl_typesupport_introspection_cpp.hpp
+[28.258s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_command__rosidl_typesupport_introspection_cpp.hpp
+[28.258s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__rosidl_typesupport_introspection_cpp.hpp
+[28.259s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__rosidl_typesupport_introspection_cpp.hpp
+[28.260s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_remote__rosidl_typesupport_introspection_cpp.hpp
+[28.260s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_vec3__type_support.cpp
+[28.261s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_asr_result__type_support.cpp
+[28.262s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/include/jibo_msgs/jibo_msgs/msg/detail/jibo_state__rosidl_typesupport_introspection_cpp.hpp
+[28.263s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_introspection_cpp.so
+[28.268s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[28.268s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_cpp.so
+[28.270s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_typesupport_cpp.so" to ""
+[28.272s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/pythonpath.sh
+[28.272s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/pythonpath.dsv
+[28.272s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs-3.0.0-py3.10.egg-info
+[28.272s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs-3.0.0-py3.10.egg-info/PKG-INFO
+[28.272s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs-3.0.0-py3.10.egg-info/SOURCES.txt
+[28.272s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs-3.0.0-py3.10.egg-info/top_level.txt
+[28.274s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs-3.0.0-py3.10.egg-info/dependency_links.txt
+[28.274s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs
+[28.275s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg
+[28.275s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_state.py
+[28.278s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_action_s.c
+[28.279s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_asr_result.py
+[28.279s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_state_s.c
+[28.280s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_asr_result_s.c
+[28.280s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_vec3.py
+[28.281s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_asr_command_s.c
+[28.282s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_remote.py
+[28.290s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/__init__.py
+[28.290s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_action.py
+[28.291s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_asr_command.py
+[28.292s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_remote_s.c
+[28.296s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_vec3_s.c
+[28.297s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/_jibo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[28.297s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/_jibo_msgs_s.ep.rosidl_typesupport_c.c
+[28.298s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/_jibo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[28.299s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[28.300s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/__init__.py
+[28.301s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/libjibo_msgs__rosidl_generator_py.so
+[28.301s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[28.302s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[28.460s] Listing '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs'...
+[28.460s] Compiling '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/__init__.py'...
+[28.460s] Listing '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg'...
+[28.460s] Compiling '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/__init__.py'...
+[28.460s] Compiling '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_action.py'...
+[28.461s] Compiling '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_asr_command.py'...
+[28.461s] Compiling '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_asr_result.py'...
+[28.461s] Compiling '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_remote.py'...
+[28.461s] Compiling '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_state.py'...
+[28.461s] Compiling '/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/msg/_jibo_vec3.py'...
+[28.470s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[28.471s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[28.471s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[28.473s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[28.473s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[28.474s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/python3.10/site-packages/jibo_msgs/jibo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[28.475s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_generator_py.so
+[28.476s] -- Set runtime path of "/workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/lib/libjibo_msgs__rosidl_generator_py.so" to ""
+[28.476s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAction.idl
+[28.486s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrCommand.idl
+[28.486s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrResult.idl
+[28.486s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboRemote.idl
+[28.487s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboState.idl
+[28.487s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboVec3.idl
+[28.487s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAction.msg
+[28.488s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrCommand.msg
+[28.488s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboAsrResult.msg
+[28.489s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboRemote.msg
+[28.489s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboState.msg
+[28.489s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/msg/JiboVec3.msg
+[28.489s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/ament_index/resource_index/package_run_dependencies/jibo_msgs
+[28.490s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/ament_index/resource_index/parent_prefix_path/jibo_msgs
+[28.490s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/ament_prefix_path.sh
+[28.490s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/ament_prefix_path.dsv
+[28.491s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/path.sh
+[28.491s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/environment/path.dsv
+[28.491s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/local_setup.bash
+[28.491s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/local_setup.sh
+[28.491s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/local_setup.zsh
+[28.492s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/local_setup.dsv
+[28.492s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/package.dsv
+[28.492s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/ament_index/resource_index/packages/jibo_msgs
+[28.492s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_generator_cExport.cmake
+[28.493s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_generator_cExport-noconfig.cmake
+[28.493s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[28.493s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[28.493s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_introspection_cExport.cmake
+[28.494s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[28.494s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_cExport.cmake
+[28.494s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[28.494s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_generator_cppExport.cmake
+[28.495s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[28.495s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[28.495s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[28.496s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[28.496s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_cppExport.cmake
+[28.496s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[28.496s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_generator_pyExport.cmake
+[28.497s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/export_jibo_msgs__rosidl_generator_pyExport-noconfig.cmake
+[28.497s] -- Installing: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/rosidl_cmake-extras.cmake
+[28.497s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[28.498s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[28.500s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[28.500s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[28.500s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[28.501s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[28.504s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgsConfig.cmake
+[28.510s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/cmake/jibo_msgsConfig-version.cmake
+[28.510s] -- Up-to-date: /workspaces/jibo-workshop-fol2024/ros2_workspace/install/jibo_msgs/share/jibo_msgs/package.xml
+[28.510s] Invoked command in '/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs

@@ -1,0 +1,133 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from jibo_msgs/msg/JiboAction.msg
+// generated code does not contain a copyright notice
+
+#include "jibo_msgs/msg/JiboVec3.idl"
+#include "std_msgs/msg/Header.idl"
+
+module jibo_msgs {
+  module msg {
+    module JiboAction_Constants {
+      @verbatim (language="comment", text=
+        "Anim Transition Constants")
+      const int8 ANIMTRANS_RESET = 0;
+      const int8 ANIMTRANS_KEEP_LASTFRAME = 1;
+      @verbatim (language="comment", text=
+        "Attention Mode Transition Constants" "\n"        "" "\n"        "This does not completely turn off Jibo's attention mode, but puts it in \"COMMAND\" mode. It will still react to Hey Jibo and attend to the sound source.")
+      const int8 ATTENTION_MODE_OFF = 0;
+      @verbatim (language="comment", text=
+        "This puts Jibo back to \"ENGAGED\" mode.")
+      const int8 ATTENTION_MODE_ON = 1;
+      @verbatim (language="comment", text=
+        "Animation Constants")
+      const string EMOJI_SHARK = "Emoji/Emoji_Shark_01_01.keys";
+      const string EMOJI_BEER = "Emoji/Emoji_Beer_01_01.keys";
+      const string EMOJI_PARTY_PINK = "Emoji/Emoji_PartyPink_01_01.keys";
+      const string EMOJI_PARTY_BLUE = "Emoji/Emoji_PartyBlue_01_01.keys";
+      const string EMOJI_RAINCLOUD = "Emoji/Emoji_RainCloud_01_01.keys";
+      const string RING_IN_ANIM = "Misc/ring_in.keys";
+      const string HAPPY_GO_LUCKY_DANCE = "Dances/Happy_Lucky_01_01.keys";
+      const string EYE_FIDGET = "Misc/eye_fidget.keys";
+      const string LOOK_DOWN = "Poses/Directional/Body_Look_Center_Down_01_01.keys";
+      const string DEFAULT = "default.keys";
+      @verbatim (language="comment", text=
+        "Animations for interactive storybook.")
+      const string QUESTION_ANIM_AND_EMOJI = "Misc/Question_01_02.keys";
+      const string HAPPY_ANIM_AND_SOUND = "Misc/Eye_to_Happy_01.keys";
+      const string CELEBRATE_ANIM = "Dances/Celebrate_01.keys";
+      const string LAUGH_ANIM = "Misc/Laughter_01_03.keys";
+      const string SAD_ANIM_SHAKE_HEAD = "Misc/Sad_03.keys";
+      @verbatim (language="comment", text=
+        "Motion Constants")
+      const string RING_IN_SOUND = "SFX_Global_CheckmarkButton.m4a";
+      @verbatim (language="comment", text=
+        "Animations for iSpy Game")
+      const string LOOK_LEFT_RIGHT = "Misc/checking_05_01.keys";
+      const string LOOK_DOWN_CENTER = "Misc/embarassed_01_02.keys";
+      @verbatim (language="comment", text=
+        "Silent animations")
+      const string ROBOT_SILENT_NOD = "silent/youre_welcome_02.keys";
+      const string ROBOT_SILENT_HAPPY_DANCE = "Dances/Side_Shaker_01_01.keys";
+      const string ROBOT_SILENT_YES = "silent/nod_twice_01.keys";
+      const string ROBOT_SILENT_PUZZLED = "silent/confused_01.keys";
+      const string ROBOT_SILENT_FRUSTRATED = "silent/frustrated_02.keys";
+      const string ROBOT_SILENT_SAD = "silent/sad_03.keys";
+      const string ROBOT_SILENT_INTERESTED = "silent/interested_02.keys";
+      const string ROBOT_SILENT_EXCITED = "silent/excited_03.keys";
+      @verbatim (language="comment", text=
+        "Sad emotions")
+      const string ROBOT_SAD = "Misc/sad_02.keys";
+      const string ROBOT_UNSURE = "Misc/thinking_06_02.keys";
+      const string ROBOT_COMFORT = "Misc/relieved_01.keys";
+      const string ROBOT_ASK_HELP = "Misc/puzzled_01_02.keys";
+      const string ROBOT_DISAPPOINTED = "Misc/no_4.keys";
+      @verbatim (language="comment", text=
+        "Positive emotions")
+      const string ROBOT_EXCITED = "Misc/success_02.keys";
+      const string ROBOT_INTERESTED = "Misc/interested_01.keys";
+      const string ROBOT_YES = "Misc/yep_02.keys";
+      const string ROBOT_HAPPY_DANCE = "Dances/dance_circuit_saver_00.keys";
+      const string ROBOT_CURIOUS = "Misc/puzzled_02_02.keys";
+      const string ROBOT_ATTENTION = "Misc/pose_forward.keys";
+      const string ROBOT_CELEBRATION = "Dances/dance_disco_00.keys";
+      const string ROBOT_ENCOURAGING = "Misc/greetings_9.keys";
+      const string ROBOT_WINK = "Misc/eye_medium_blink_01.keys";
+      const string ROBOT_THINKING = "Misc/thinking_08.keys";
+    };
+    @verbatim (language="comment", text=
+      "Message for requesting actions of Jibo controller")
+    struct JiboAction {
+      std_msgs::msg::Header header;
+
+      boolean do_motion;
+
+      @verbatim (language="comment", text=
+        "use constants defined below")
+      string motion;
+
+      boolean do_lookat;
+
+      jibo_msgs::msg::JiboVec3 lookat;
+
+      boolean do_tts;
+
+      string tts_text;
+
+      boolean do_mim;
+
+      string mim_body;
+
+      string mim_rule;
+
+      boolean do_sound_playback;
+
+      string audio_filename;
+
+      @verbatim (language="comment", text=
+        "bool do_led")
+      jibo_msgs::msg::JiboVec3 led_color;
+
+      boolean do_volume;
+
+      float volume;
+
+      boolean do_anim_transition;
+
+      int8 anim_transition;
+
+      boolean do_attention_mode;
+
+      int8 attention_mode;
+
+      @verbatim (language="comment", text=
+        "TTS Options" "\n"
+        "" "\n"
+        "Multiplier, so 2.0 = twice as slow, .5 = twice as fast")
+      float tts_duration_stretch;
+
+      @verbatim (language="comment", text=
+        "Valid range is 0.2 - 0.8")
+      float tts_pitch;
+    };
+  };
+};

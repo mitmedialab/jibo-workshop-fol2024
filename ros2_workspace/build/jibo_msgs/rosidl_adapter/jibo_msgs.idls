@@ -1,0 +1,6 @@
+/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboAction.idl
+/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboAsrCommand.idl
+/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboAsrResult.idl
+/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboRemote.idl
+/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboState.idl
+/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboVec3.idl

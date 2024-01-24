@@ -1,0 +1,16 @@
+{
+  "package_name": "jibo_msgs",
+  "output_dir": "/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_generator_type_description/jibo_msgs",
+  "idl_tuples": [
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboAction.idl",
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboAsrCommand.idl",
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboAsrResult.idl",
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboRemote.idl",
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboState.idl",
+    "/workspaces/jibo-workshop-fol2024/ros2_workspace/build/jibo_msgs/rosidl_adapter/jibo_msgs:msg/JiboVec3.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/iron/share/std_msgs",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces"
+  ]
+}
