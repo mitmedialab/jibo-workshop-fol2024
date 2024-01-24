@@ -3,28 +3,29 @@
 {
     "name": "Ubuntu",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-    //"image": "docker.io/mitprg/jibo-workshop-fol2024:latest"
-    //"image": "mcr.microsoft.com/devcontainers/base:jammy"
-    "build" : {
-	"dockerfile": "Dockerfile"
-    },
+    //"image": "docker.io/mitprg/jibo-workshop-fol2024:latest",
+    //"image": "mcr.microsoft.com/devcontainers/base:jammy",
+    //"build" : {
+    //    "dockerfile": "Dockerfile"
+    //},
+    "image": "docker.io/mitprg/jibo-workshop-fol2024-ros2:latest",
 
     "hostRequirements": {
-	"cpus": 4
+        "cpus": 4
     },
     "waitFor": "onCreateCommand",
     "updateContentCommand": "python3 -m pip install -r requirements.txt",
     "postCreateCommand": "launch.sh",
     "customizations": {
-	"codespaces": {
-	    "openFiles": ["notebooks/notebook.ipynb"]
-	},
-	"vscode": {
-	    "extensions": [
-		"ms-toolsai.jupyter",
-		"ms-python.python"
-	    ]
-	}
+        "codespaces": {
+            "openFiles": ["notebooks/notebook.ipynb"]
+        },
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python"
+            ]
+        }
     }
 
     // Features to add to the dev container. More info: https://containers.dev/features.
