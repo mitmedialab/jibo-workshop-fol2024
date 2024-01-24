@@ -13,4 +13,4 @@ RUN apt update \
  && apt install -y ros-iron-ros-base \
  && apt install -y ros-iron-rosbridge-suite
 
-RUN apt install python3-pip
+RUN apt install -y python3-pip
