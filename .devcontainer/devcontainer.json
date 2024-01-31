@@ -8,7 +8,7 @@
     //"build" : {
     //    "dockerfile": "Dockerfile"
     //},
-    "image": "docker.io/mitprg/jibo-workshop-fol2024-ros2:latest",
+    "image": "docker.io/mitprg/jibo-workshop-fol2024-ros2:superjupyter",
 
     "hostRequirements": {
         "cpus": 4
