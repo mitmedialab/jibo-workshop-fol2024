@@ -25,6 +25,12 @@
                 "ms-python.python"
             ]
         }
+    },
+    "forwardPorts": [9090],
+    "portsAttributes": {
+        "9090": {
+            "label": "rosbridge"
+        }
     }
 
     // Features to add to the dev container. More info: https://containers.dev/features.
