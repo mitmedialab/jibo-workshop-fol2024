@@ -15,10 +15,10 @@
     },
     "waitFor": "onCreateCommand",
     "updateContentCommand": "build.sh",
-    "postCreateCommand": "/workspaces/jibo-workshop-fol2024/launch.sh",
+    "postCreateCommand": "/home/vscode/launch.sh",
     "customizations": {
         "codespaces": {
-            "openFiles": ["notebooks/notebook.ipynb"]
+            "openFiles": ["notebooks/workshop.ipynb"]
         },
         "vscode": {
             "extensions": [
