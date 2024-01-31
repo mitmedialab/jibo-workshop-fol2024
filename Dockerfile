@@ -133,12 +133,12 @@ RUN apt-get update && \
     apt-get install -y \
     ros-${ROS_DISTRO}-webots-ros2
 
-RUN apt install -y \
-    ros-${ROS_DISTRO}-moveit \
-    ros-${ROS_DISTRO}-nav2-bringup \
-    ros-${ROS_DISTRO}-slam-toolbox \
-    ros-${ROS_DISTRO}-tiago-bringup \
-    ros-${ROS_DISTRO}-cartographer-ros
+#RUN apt install -y \
+#    ros-${ROS_DISTRO}-moveit \
+#    ros-${ROS_DISTRO}-nav2-bringup \
+#    ros-${ROS_DISTRO}-slam-toolbox \
+#    #!#ros-${ROS_DISTRO}-tiago-bringup \
+#    ros-${ROS_DISTRO}-cartographer-ros
 
 USER ${NB_USER}
 RUN pip install --upgrade "jupyterlab<4" jupyterlab-git
