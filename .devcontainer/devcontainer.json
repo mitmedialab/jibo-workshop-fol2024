@@ -14,7 +14,8 @@
         "cpus": 4
     },
     "waitFor": "onCreateCommand",
-    "postCreateCommand": "launch.sh",
+    "updateContentCommand": "build.sh",
+    "postCreateCommand": "/workspaces/jibo-workshop-fol2024/launch.sh",
     "customizations": {
         "codespaces": {
             "openFiles": ["notebooks/notebook.ipynb"]
