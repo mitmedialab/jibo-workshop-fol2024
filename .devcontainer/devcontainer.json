@@ -15,10 +15,10 @@
     },
     "waitFor": "onCreateCommand",
     "updateContentCommand": "build.sh",
-    "postCreateCommand": "/home/vscode/launch.sh",
+    //"postCreateCommand": "/home/vscode/launch.sh",
     "customizations": {
         "codespaces": {
-            "openFiles": ["notebooks/workshop.ipynb"]
+            //"openFiles": ["notebooks/workshop.ipynb"]
         },
         "vscode": {
             "extensions": [
