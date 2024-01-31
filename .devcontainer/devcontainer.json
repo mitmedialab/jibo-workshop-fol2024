@@ -14,7 +14,6 @@
         "cpus": 4
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": "python3 -m pip install -r requirements.txt",
     "postCreateCommand": "launch.sh",
     "customizations": {
         "codespaces": {
