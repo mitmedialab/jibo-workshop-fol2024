@@ -17,17 +17,13 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o 
 
 ARG NB_USER=vscode
 
-#COPY --chown=${NB_USER}:users build.sh
-#USER vscode
-#RUN build.sh  # use colcon to build the Jibo ROS messages
-#USER root
-
 COPY --chown=${NB_USER}:users requirements.txt /home/${NB_USER}/requirements.txt
 RUN apt install -y python3-pip \
  && python3 -m pip install -r /home/${NB_USER}/requirements.txt
 
 COPY --chown=vscode:vscode ros2_workspace /home/vscode/ros2_workspace
 COPY --chown=vscode:vscode build.sh /home/vscode/build.sh
+COPY --chown=vscode:vscode launch.sh /home/vscode/launch.sh
 USER vscode
 WORKDIR /home/vscode
 RUN ./build.sh
@@ -45,4 +41,4 @@ RUN echo "source /opt/ros/iron/setup.bash" >> /root/.bashrc \
 # --- Entrypoint --- #
 COPY --chown=${NB_USER}:users entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
-#!#CMD [ "start-notebook.sh" ]
+#CMD [ "start-notebook.sh" ]
