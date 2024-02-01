@@ -1,30 +1,3 @@
-# Jacqueline Kory Westlund
-# May 2016
-#
-# The MIT License (MIT)
-#
-# Copyright (c) 2016 Personal Robots Group
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
-# from PySide import QtGui # basic GUI stuff
-import rclpy # ROS
 from jibo_msgs.msg import JiboAction # ROS msgs to talk to Tega
 from jibo_msgs.msg import JiboVec3 # ROS msgs to talk to Tega
 from jibo_msgs.msg import JiboAsrCommand
@@ -36,7 +9,6 @@ from std_msgs.msg import Header # standard ROS msg header
 import urllib.request
 import time
 
-RECORDING_PATH = './recordings/'
 max_counter = 100
 
 class jibo_teleop_ros():
@@ -54,16 +26,10 @@ class jibo_teleop_ros():
         # of text or buttons based on what messages we're getting
         self.flags = flags
 
-        # We will publish commands to the tablet and commands to the robot.
-        # We might send audio to the audio entrainer on its way to the robot.
-        # TODO it may be worthwhile to put the topic names in the config file.
-        # self.tablet_pub = rospy.Publisher('opal_tablet_command', OpalCommand,
-        #         queue_size = 10)
-
-        self.jibo_pub = rclpy.create_publisher('jibo', JiboAction, queue_size = 10)
-        self.jibo_state = rclpy.create_subscription('jibo_state', JiboState, self.on_jibo_state_msg)
-        self.jibo_asr_result = rclpy.create_subscription('jibo_asr_result', JiboAsrResult, self.on_jibo_asr_results)
-        self.jibo_asr_command = rclpy.create_publisher('jibo_asr_command', JiboAsrCommand, queue_size=10)
+        self.jibo_pub = self.ros_node.create_publisher(JiboAction, 'jibo', 10)
+        self.jibo_state = self.ros_node.create_subscription(JiboState, 'jibo_state', self.on_jibo_state_msg, 10)
+        self.jibo_asr_result = self.ros_node.create_subscription(JiboAsrResult, 'jibo_asr_result', self.on_jibo_asr_results, 10)
+        self.jibo_asr_command = self.ros_node.create_publisher(JiboAsrCommand, 'jibo_asr_command', 10)
 
     def reset_msgs(self):
         self.flags.jibo_is_playing_sound = False
@@ -101,14 +67,14 @@ class jibo_teleop_ros():
             msg = JiboAction()
             # add header
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_attention_mode = True
             if attention == "OFF":
                 msg.attention_mode = msg.ATTENTION_MODE_OFF
             else:
                 msg.attention_mode = msg.ATTENTION_MODE_ON
             self.jibo_pub.publish(msg)
-            rclpy.loginfo(msg)
+            self.ros_node.get_logger().info(msg.data)
 
     def send_motion_message(self, motion):
         """ Publish JiboAction do motion message """
@@ -117,11 +83,11 @@ class jibo_teleop_ros():
             msg = JiboAction()
             # add header
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_motion = True
             msg.motion = motion
             self.jibo_pub.publish(msg)
-            rclpy.loginfo(msg)
+            self.ros_node.get_logger().info(msg.data)
 
     def send_lookat_message(self, lookat):
         """ Publish JiboAction lookat message """
@@ -130,11 +96,11 @@ class jibo_teleop_ros():
             msg = JiboAction()
             # add header
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_lookat = True
             msg.lookat = lookat
             self.jibo_pub.publish(msg)
-            rclpy.loginfo(msg)
+            self.ros_node.get_logger().info(msg.data)
     
     def send_sound_message(self, speech):
         """ Publish JiboAction playback audio message """
@@ -143,11 +109,11 @@ class jibo_teleop_ros():
             msg = JiboAction()
             # add header
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_sound_playback = True
             msg.audio_filename = speech
             self.jibo_pub.publish(msg)
-            rclpy.loginfo(msg)
+            self.ros_node.get_logger().info(msg.data)
 
     def send_sound_motion_message(self, speech, motion):
         """ Publish JiboAction playback audio and motion message """
@@ -156,13 +122,13 @@ class jibo_teleop_ros():
             msg = JiboAction()
             # add header
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_sound_playback = True
             msg.do_motion = True
             msg.audio_filename = speech
             msg.motion = motion
             self.jibo_pub.publish(msg)
-            rclpy.loginfo(msg)
+            self.ros_node.get_logger().info(msg.data)
 
     def send_tts_message(self, speech):
         """ Publish JiboAction playback TTS message """
@@ -171,13 +137,13 @@ class jibo_teleop_ros():
             msg = JiboAction()
             # add header
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_tts = True
             msg.tts_text = speech
             msg.do_volume = True
             msg.volume = 1.0
             self.jibo_pub.publish(msg)
-            rclpy.loginfo(msg)
+            self.ros_node.get_logger().info(msg.tts_text)
 
 
     def send_volume_message(self, volume):
@@ -187,11 +153,11 @@ class jibo_teleop_ros():
             msg = JiboAction()
             # add header
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_volume = True
             msg.volume = volume
             self.jibo_pub.publish(msg)
-            rclpy.loginfo(msg)
+            self.ros_node.get_logger().info(msg.data)
 
     def send_anim_transition_message(self, anim_transition):
         """ Publish JiboAction message that switches between animation playback modes. """
@@ -200,13 +166,13 @@ class jibo_teleop_ros():
             msg = JiboAction()
             # add header
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_attention_mode = True
             msg.attention_mode = msg.ATTENTION_MODE_OFF
             msg.do_anim_transition = True
             msg.anim_transition = anim_transition
             self.jibo_pub.publish(msg)
-            rclpy.loginfo(msg)
+            self.ros_node.get_logger().info(msg.data)
 
     def send_recording_message(self, jibo_recording_type):
         """ Publish JiboAction message that switches between animation playback modes. """
@@ -215,11 +181,11 @@ class jibo_teleop_ros():
             msg = JiboAction()
             # add header
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_recording = True #TODO: fix for when recording should stop/reset
             msg.recording_type = jibo_recording_type
             self.jibo_pub.publish(msg)
-            rclpy.loginfo(msg)
+            self.ros_node.get_logger().info(msg.data)
 
     def send_led_message(self, red_val, green_val, blue_val):
         """ Publish JiboAction message that switches between animation playback modes. """
@@ -228,11 +194,11 @@ class jibo_teleop_ros():
             msg = JiboAction()
             # add header
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_led = True
             msg.led_color = JiboVec3(red_val, green_val, blue_val)
             self.jibo_pub.publish(msg)
-            rclpy.loginfo(msg)
+            self.ros_node.get_logger().info(msg.data)
 
     def on_child_attn_msg(self, data):
         # when we get child attention messages, set a label to say whether the
@@ -271,7 +237,7 @@ class jibo_teleop_ros():
         if self.jibo_pub is not None:
             msg = JiboAsrCommand()
             msg.header = Header()
-            msg.header.stamp = rclpy.Time.now()
+            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.command = command
             msg.heyjibo = heyjibo
             msg.continuous = continuous
@@ -281,7 +247,7 @@ class jibo_teleop_ros():
             self.jibo_asr_command.publish(msg)
 
     def on_jibo_asr_results(self, data):
-        rclpy.loginfo(rclpy.get_caller_id() + " I heard: %s", data.transcription)
+        self.ros_node.get_logger().info(self.ros_node.get_name() + " I heard: %s", data.transcription)
         self.asr_transcription = data.transcription
         self.asr_confidence = data.confidence
         self.asr_heuristic_score = data.heuristic_score
