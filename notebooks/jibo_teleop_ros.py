@@ -191,7 +191,7 @@ class jibo_teleop_ros():
             led_color.z=blue_val
             msg.led_color = led_color
             self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.led_color)
+            # self.ros_node.get_logger().info(msg.led_color)
 
     def on_child_attn_msg(self, data):
         # when we get child attention messages, set a label to say whether the
