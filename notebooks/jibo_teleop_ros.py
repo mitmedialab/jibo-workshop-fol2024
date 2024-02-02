@@ -25,6 +25,8 @@ class jibo_teleop_ros():
         # these are shared flags that the UI code will use to change the colors
         # of text or buttons based on what messages we're getting
         self.flags = flags
+        self.reset_msgs()
+        self.reset_asr_msgs()
 
         self.jibo_pub = self.ros_node.create_publisher(JiboAction, 'jibo', 10)
         self.jibo_state = self.ros_node.create_subscription(JiboState, 'jibo_state', self.on_jibo_state_msg, 10)
@@ -44,7 +46,7 @@ class jibo_teleop_ros():
     def reset_asr_msgs(self):
 
         self.asr_transcription = ''
-        self.asr_slotAction = ''
+        self.asr_slotaction = ''
         self.asr_confidence = 0.0
         self.asr_heuristic_score = 0.0
 
@@ -74,7 +76,7 @@ class jibo_teleop_ros():
             else:
                 msg.attention_mode = msg.ATTENTION_MODE_ON
             self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.data)
+            self.ros_node.get_logger().info(msg.do_attention_mode)
 
     def send_motion_message(self, motion):
         """ Publish JiboAction do motion message """
@@ -87,20 +89,20 @@ class jibo_teleop_ros():
             msg.do_motion = True
             msg.motion = motion
             self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.data)
+            self.ros_node.get_logger().info(msg.motion)
 
-    def send_lookat_message(self, lookat):
+    def send_lookat_message(self, x,y,z):
         """ Publish JiboAction lookat message """
         if self.jibo_pub is not None:
-            print('sending lookat message: %s' % lookat)
+            print('sending lookat message: {},{},{}'.format(x,y,z))
             msg = JiboAction()
             # add header
             msg.header = Header()
             msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_lookat = True
-            msg.lookat = lookat
+            msg.lookat = JiboVec3(x,y,z)
             self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.data)
+            self.ros_node.get_logger().info(msg.lookat)
     
     def send_sound_message(self, speech):
         """ Publish JiboAction playback audio message """
@@ -113,7 +115,7 @@ class jibo_teleop_ros():
             msg.do_sound_playback = True
             msg.audio_filename = speech
             self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.data)
+            self.ros_node.get_logger().info(msg.audio_filename)
 
     def send_sound_motion_message(self, speech, motion):
         """ Publish JiboAction playback audio and motion message """
@@ -128,7 +130,7 @@ class jibo_teleop_ros():
             msg.audio_filename = speech
             msg.motion = motion
             self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.data)
+            self.ros_node.get_logger().info(msg.audio_filename)
 
     def send_tts_message(self, speech):
         """ Publish JiboAction playback TTS message """
@@ -157,7 +159,7 @@ class jibo_teleop_ros():
             msg.do_volume = True
             msg.volume = volume
             self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.data)
+            self.ros_node.get_logger().info(msg.volume)
 
     def send_anim_transition_message(self, anim_transition):
         """ Publish JiboAction message that switches between animation playback modes. """
@@ -172,20 +174,7 @@ class jibo_teleop_ros():
             msg.do_anim_transition = True
             msg.anim_transition = anim_transition
             self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.data)
-
-    def send_recording_message(self, jibo_recording_type):
-        """ Publish JiboAction message that switches between animation playback modes. """
-        if self.jibo_pub is not None:
-            print('\nsending Jibo recording command message: %s' % jibo_recording_type)
-            msg = JiboAction()
-            # add header
-            msg.header = Header()
-            msg.header.stamp = self.ros_node.get_clock().now().to_msg()
-            msg.do_recording = True #TODO: fix for when recording should stop/reset
-            msg.recording_type = jibo_recording_type
-            self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.data)
+            self.ros_node.get_logger().info(msg.anim_transition)
 
     def send_led_message(self, red_val, green_val, blue_val):
         """ Publish JiboAction message that switches between animation playback modes. """
@@ -195,10 +184,14 @@ class jibo_teleop_ros():
             # add header
             msg.header = Header()
             msg.header.stamp = self.ros_node.get_clock().now().to_msg()
-            msg.do_led = True
-            msg.led_color = JiboVec3(red_val, green_val, blue_val)
+            # msg.do_led = True
+            led_color = JiboVec3()
+            led_color.x=red_val
+            led_color.y=green_val
+            led_color.z=blue_val
+            msg.led_color = led_color
             self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.data)
+            self.ros_node.get_logger().info(msg.led_color)
 
     def on_child_attn_msg(self, data):
         # when we get child attention messages, set a label to say whether the
@@ -251,7 +244,7 @@ class jibo_teleop_ros():
         self.asr_transcription = data.transcription
         self.asr_confidence = data.confidence
         self.asr_heuristic_score = data.heuristic_score
-        self.asr_slotAction = data.slotAction
+        self.asr_slotaction = data.slotaction
         #print(data)
         #print(self.asr_transcription)
         #print(self.asr_heuristic_score)
