@@ -185,7 +185,11 @@ class jibo_teleop_ros():
             msg.header = Header()
             msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             # msg.do_led = True
-            msg.led_color = JiboVec3((red_val, green_val, blue_val))
+            led_color = JiboVec3()
+            led_color.x=red_val
+            led_color.y=green_val
+            led_color.z=blue_val
+            msg.led_color = led_color
             self.jibo_pub.publish(msg)
             self.ros_node.get_logger().info(msg.led_color)
 
