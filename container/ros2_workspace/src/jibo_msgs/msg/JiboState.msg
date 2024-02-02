@@ -9,8 +9,8 @@ string in_motion
 string audio
 string tts_msg
 float32 volume
-#JiboVec3 led_color
-#JiboVec3 lookat
+JiboVec3 led_color
+JiboVec3 lookat
 
 # True when the robot is performing an animation that is not the 
 # robot's IDLE animation       {}        
