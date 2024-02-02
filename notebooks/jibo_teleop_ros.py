@@ -46,7 +46,7 @@ class jibo_teleop_ros():
     def reset_asr_msgs(self):
 
         self.asr_transcription = ''
-        self.asr_slotAction = ''
+        self.asr_slotaction = ''
         self.asr_confidence = 0.0
         self.asr_heuristic_score = 0.0
 
@@ -185,7 +185,7 @@ class jibo_teleop_ros():
             msg.header = Header()
             msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             # msg.do_led = True
-            msg.led_color = JiboVec3(red_val, green_val, blue_val)
+            msg.led_color = JiboVec3((red_val, green_val, blue_val))
             self.jibo_pub.publish(msg)
             self.ros_node.get_logger().info(msg.led_color)
 
@@ -240,7 +240,7 @@ class jibo_teleop_ros():
         self.asr_transcription = data.transcription
         self.asr_confidence = data.confidence
         self.asr_heuristic_score = data.heuristic_score
-        self.asr_slotAction = data.slotAction
+        self.asr_slotaction = data.slotaction
         #print(data)
         #print(self.asr_transcription)
         #print(self.asr_heuristic_score)
