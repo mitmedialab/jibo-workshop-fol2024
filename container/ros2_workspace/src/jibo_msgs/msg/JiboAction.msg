@@ -19,7 +19,7 @@ string mim_rule
 bool do_sound_playback
 string audio_filename
 
-#bool do_led
+bool do_led
 jibo_msgs/JiboVec3 led_color
 
 bool do_volume
