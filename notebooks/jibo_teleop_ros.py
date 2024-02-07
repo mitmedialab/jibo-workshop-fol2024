@@ -25,11 +25,12 @@ class jibo_teleop_ros():
         # these are shared flags that the UI code will use to change the colors
         # of text or buttons based on what messages we're getting
         self.flags = flags
-        self.reset_msgs()
-        self.reset_asr_msgs()
+        # self.reset_msgs()
+        # self.reset_asr_msgs()
 
         self.jibo_pub = self.ros_node.create_publisher(JiboAction, 'jibo', 10)
         self.jibo_state = self.ros_node.create_subscription(JiboState, 'jibo_state', self.on_jibo_state_msg, 10)
+        
         self.jibo_asr_result = self.ros_node.create_subscription(JiboAsrResult, 'jibo_asr_result', self.on_jibo_asr_results, 10)
         self.jibo_asr_command = self.ros_node.create_publisher(JiboAsrCommand, 'jibo_asr_command', 10)
 
@@ -100,9 +101,14 @@ class jibo_teleop_ros():
             msg.header = Header()
             msg.header.stamp = self.ros_node.get_clock().now().to_msg()
             msg.do_lookat = True
-            msg.lookat = JiboVec3(x,y,z)
+            # msg.lookat = JiboVec3(x,y,z)
+            lookat = JiboVec3()
+            lookat.x=x
+            lookat.y=y
+            lookat.z=z
+            msg.lookat = lookat
             self.jibo_pub.publish(msg)
-            self.ros_node.get_logger().info(msg.lookat)
+            # self.ros_node.get_logger().info(msg.lookat)
     
     def send_sound_message(self, speech):
         """ Publish JiboAction playback audio message """
@@ -184,7 +190,7 @@ class jibo_teleop_ros():
             # add header
             msg.header = Header()
             msg.header.stamp = self.ros_node.get_clock().now().to_msg()
-            # msg.do_led = True
+            msg.do_led = True
             led_color = JiboVec3()
             led_color.x=red_val
             led_color.y=green_val
@@ -193,17 +199,8 @@ class jibo_teleop_ros():
             self.jibo_pub.publish(msg)
             # self.ros_node.get_logger().info(msg.led_color)
 
-    def on_child_attn_msg(self, data):
-        # when we get child attention messages, set a label to say whether the
-        # child is attending or not, and also set a flag
-        self.flags.child_is_attending = data.data
-        if data.data:
-            self.ros_label.setText("Child is ATTENDING")
-        else:
-            self.ros_label.setText("Child is NOT ATTENDING")
-
-
     def on_jibo_state_msg(self, data):
+        print(data)
         # when we get Jibo state message, set a flag indicating whether the
         # robot is in motion or playing sound or not
         self.flags.jibo_is_playing_sound = data.is_playing_sound
@@ -240,6 +237,7 @@ class jibo_teleop_ros():
             self.jibo_asr_command.publish(msg)
 
     def on_jibo_asr_results(self, data):
+        print(data)
         self.ros_node.get_logger().info(self.ros_node.get_name() + " I heard: %s", data.transcription)
         self.asr_transcription = data.transcription
         self.asr_confidence = data.confidence
