@@ -1,3 +1,5 @@
+import rclpy
+from rclpy.node import Node
 from jibo_msgs.msg import JiboAction # ROS msgs to talk to Tega
 from jibo_msgs.msg import JiboVec3 # ROS msgs to talk to Tega
 from jibo_msgs.msg import JiboAsrCommand
@@ -11,10 +13,11 @@ import time
 
 max_counter = 100
 
-class jibo_teleop_ros():
+class jibo_teleop_ros(Node):
     # ROS node
 
     def __init__(self, ros_node, ros_label, flags):
+        super().__init__('ros_teleop')
         """ Initialize ROS """
         # we get a reference to the main ros node so we can do callbacks
         # to publish messages, and subscribe to stuff
@@ -30,8 +33,10 @@ class jibo_teleop_ros():
 
         self.jibo_pub = self.ros_node.create_publisher(JiboAction, 'jibo', 10)
         self.jibo_state = self.ros_node.create_subscription(JiboState, 'jibo_state', self.on_jibo_state_msg, 10)
+        self.jibo_state
         
         self.jibo_asr_result = self.ros_node.create_subscription(JiboAsrResult, 'jibo_asr_result', self.on_jibo_asr_results, 10)
+        self.jibo_asr_result
         self.jibo_asr_command = self.ros_node.create_publisher(JiboAsrCommand, 'jibo_asr_command', 10)
 
     def reset_msgs(self):
@@ -53,7 +58,6 @@ class jibo_teleop_ros():
 
 
     def JiboListen(self, heyjibo=True, continuous=False, incremental=False, listentime=0):
-        self.asr_transcription = ''
         if listentime == 0:
             self.jibo_asr_command_builder(JiboAsrCommand.START, heyjibo, False, False)
         else:
@@ -62,6 +66,7 @@ class jibo_teleop_ros():
             self.jibo_asr_command_builder(JiboAsrCommand.STOP, True, False, False)
 
         self.waitforJiboListen()
+        print('out from waitforJiboListen')
 
     def send_attention_message(self, attention):
         """ Publish JiboAction do motion message """
@@ -199,15 +204,16 @@ class jibo_teleop_ros():
             self.jibo_pub.publish(msg)
             # self.ros_node.get_logger().info(msg.led_color)
 
+    @rclpy.callback_groups 
     def on_jibo_state_msg(self, data):
         print(data)
         # when we get Jibo state message, set a flag indicating whether the
+
         # robot is in motion or playing sound or not
         self.flags.jibo_is_playing_sound = data.is_playing_sound
         # Instead of giving us a boolean to indicate whether Jibo is in motion
         # or not, we get the name of the animation.
         self.flags.jibo_is_doing_motion = data.doing_motion
-        # when we get Jibo state message, set a flag indicating whether the
 
         # Is jibo still listening
         self.flags.jibo_is_listening = data.is_listening
@@ -233,12 +239,13 @@ class jibo_teleop_ros():
             msg.continuous = continuous
             msg.incremental = incremental
             msg.rule = rule
-            print(str(msg))
+            # print(str(msg))
             self.jibo_asr_command.publish(msg)
 
+    @rclpy.callback_groups 
     def on_jibo_asr_results(self, data):
         print(data)
-        self.ros_node.get_logger().info(self.ros_node.get_name() + " I heard: %s", data.transcription)
+        self.ros_node.get_logger().info(" I heard: "+ data.transcription)
         self.asr_transcription = data.transcription
         self.asr_confidence = data.confidence
         self.asr_heuristic_score = data.heuristic_score
@@ -254,38 +261,24 @@ class jibo_teleop_ros():
             print('wait while talking:')
             time.sleep(0.5)
             counter = 0
-            while not self.is_playing_sound:
-                time.sleep(0.1)
-                counter += 1
-                if counter >= max_counter:
-                    break
-            print(self.jibo_tts)
-            counter = 0
             while self.is_playing_sound:
                 time.sleep(0.1) 
                 counter += 1
-                if counter >= max_counter:
-                    self.reset_msgs()
-                    break
+                # if counter >= max_counter:
+                #     self.reset_msgs()
+                #     break
 
     def waitforJiboListen(self):
         if self.jibo_pub is not None:
-            print('wait while listening:')
+            print('wait while listening: ')
             time.sleep(0.5)
-            # time.sleep(1.5)
             counter = 0
-            while not self.is_listening:
+            while not self.flags.jibo_is_listening: # self.is_listening:
+                # print('waiting in 2nd waitforJiboListen')
                 time.sleep(0.1)
                 counter += 1
                 if counter >= max_counter:
-                    break
-            print(self.asr_transcription)
-            counter = 0
-            while self.is_listening:
-                time.sleep(0.1)
-                # counter += 1
-                # if counter >= max_counter:
-                #   break
+                  break
 
     def waitforJiboAnim(self):
         if self.jibo_pub is not None:
